@@ -1,0 +1,69 @@
+@charset "UTF-8";
+html{
+    background-color: #000000;
+}
+
+.toolbar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 200px;
+}
+
+.toolbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.toolbar a:hover {
+    color: #ee239a;
+}
+
+.btn {
+    background-color: #08a48d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* 漂亮的按鈕樣式（懸停時） */
+.btn:hover {
+    background-color: #ed6116;
+}
+.center {
+    text-align: center;
+    margin: auto;
+}
+
+.mes {
+    width: 900px; /* 設置寬度 */
+    height: 400px; /* 設置高度 */
+    border: 5px solid rgb(240, 60, 171); /* 設置邊框 */
+    box-shadow: 0 0 20px 5px rgba(239, 67, 207, 0.7); /* 設置發光效果 */
+    background-color: transparent; /* 設置背景透明 */
+    margin: auto; /* 水平和垂直置中 */
+    padding: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .mes {
+        width: 320px;
+        height: 600px;
+    }
+}
+
+.mes p {
+    color: rgb(249, 249, 249); /* 設定文字顏色為藍色 */
+    font-size: 20px; /* 設定字體大小為16像素 */
+    margin-top: 10px; /* 設定上邊距為10像素 */
+}
